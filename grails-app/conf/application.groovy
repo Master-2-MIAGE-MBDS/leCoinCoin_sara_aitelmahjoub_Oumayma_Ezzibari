@@ -1,16 +1,18 @@
 
 
 // Added by the Spring Security Core plugin:
+
+grails.plugin.springsecurity.auth.loginFormUrl = '/login/auth'
+
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.mbds.emsi.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.mbds.emsi.UserRole'
 grails.plugin.springsecurity.authority.className = 'com.mbds.emsi.Role'
+grails.plugin.springsecurity.logout.postOnly=false
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/',               access: ['permitAll']],
 	[pattern: '/error',          access: ['permitAll']],
 	[pattern: '/index',          access: ['permitAll']],
-	[pattern: '/**',          access: ['permitAll']],
-	[pattern: '/user/**',          access: ['permitAll']],
-	[pattern: '/annonces/**',          access: ['permitAll']],
+
 	[pattern: '/index.gsp',      access: ['permitAll']],
 	[pattern: '/shutdown',       access: ['permitAll']],
 	[pattern: '/assets/**',      access: ['permitAll']],

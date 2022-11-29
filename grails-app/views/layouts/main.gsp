@@ -37,7 +37,17 @@
                 <li>
                     <a href="/user"><span class="fa fa-sticky-note mr-3"></span> User</a>
                 </li>
+                <li>
+                    <sec:ifLoggedIn>
 
+                        <g:link controller='logout'>Logout</g:link>
+
+                    </sec:ifLoggedIn>
+                    <sec:ifNotLoggedIn>
+                        <a href="/login/auth">Sign In</a>
+                    </sec:ifNotLoggedIn>
+
+                </li>
             </ul>
 
 
