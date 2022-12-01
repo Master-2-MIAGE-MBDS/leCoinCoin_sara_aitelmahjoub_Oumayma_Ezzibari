@@ -15,25 +15,16 @@
             </ul>
         </div>
         <div id="show-annonces" class="content scaffold-show" role="main">
-<<<<<<< HEAD
-            <h1><g:message code="default.show.label" args="[entityName]" /></h1>
-            <g:if test="${flash.message}">
-            <div class="message" role="status">${flash.message}</div>
-            </g:if>
-            <f:display bean="annonces" />
-            <g:form resource="${this.annonces}" method="DELETE">
-                <fieldset class="buttons">
-                    <g:link class="edit" action="edit" resource="${this.annonces}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
-                    <input class="delete" type="submit" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
-                </fieldset>
-            </g:form>
-        </div>
-=======
-            <g:if test="${flash.message}">
+             <g:if test="${flash.message}">
             <div class="message" role="status">${flash.message}</div>
             </g:if>
 
         </div>
+            <g:if test="${flash.message}">
+            <div class="message" role="status">${flash.message}</div>
+            </g:if>
+
+
     <div class="container" style="margin-top: 3%;margin-bottom: 3%">
         <div class="contact__wrapper shadow-lg mt-n9">
             <div class=" contact-form__wrapper p-5 order-lg-1">
@@ -60,6 +51,5 @@
             <input class="delete" type="submit" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
         </fieldset>
     </g:form>
->>>>>>> 4fb585b (Annonce : -lister les annonces)
     </body>
 </html>
