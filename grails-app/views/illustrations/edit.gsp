@@ -26,18 +26,7 @@
                 </g:eachError>
             </ul>
             </g:hasErrors>
-<<<<<<< HEAD
-            <g:form resource="${this.illustrations}" method="PUT">
-                <g:hiddenField name="version" value="${this.illustrations?.version}" />
-                <fieldset class="form">
-                    <f:all bean="illustrations"/>
-                </fieldset>
-                <fieldset class="buttons">
-                    <input class="save" type="submit" value="${message(code: 'default.button.update.label', default: 'Update')}" />
-                </fieldset>
-            </g:form>
-        </div>
-=======
+
 
         </div>
     <div class="container">
@@ -85,8 +74,6 @@
     </div>
     </div>
 
-
-
->>>>>>> 4fb585b (Annonce : -lister les annonces)
+ 
     </body>
 </html>
