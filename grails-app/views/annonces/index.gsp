@@ -18,19 +18,9 @@
             <g:if test="${flash.message}">
                 <div class="message" role="status">${flash.message}</div>
             </g:if>
-<<<<<<< HEAD
-            <f:table collection="${annoncesList}" />
-
-            <div class="pagination">
-                <g:paginate total="${annoncesCount ?: 0}" />
-            </div>
         </div>
-=======
-
-
-        </div>
+    
     <div class="container">
-        <div class="row">
             <div class="table-responsive" id="proTeamScroll"  >
                 <table class="table ">
                     <thead class="headtb">
@@ -61,9 +51,8 @@
 
                     </tbody>
                 </table>
-            </div></div></div><div class="pagination">
+            </div></div> <div class="pagination">
         <g:paginate total="${annoncesCount ?: 0}" />
     </div>
->>>>>>> 4fb585b (Annonce : -lister les annonces)
     </body>
 </html>
