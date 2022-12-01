@@ -45,19 +45,12 @@ class IllustrationsController {
     }
 
     def edit(Long id) {
-<<<<<<< HEAD
-        respond illustrationsService.get(id)
-    }
-
-    def update(Illustrations illustrations) {
-=======
-        def annonces=Annonces.list()
-        respond illustrationsService.get(id),model: [annonces:annonces]
+        def annonces = Annonces.list()
+        respond illustrationsService.get(id), model: [annonces: annonces]
     }
 
     def update(Illustrations illustrations) {
         def annonces=Annonces.list()
->>>>>>> 4fb585b (Annonce : -lister les annonces)
         if (illustrations == null) {
             notFound()
             return
@@ -69,21 +62,15 @@ class IllustrationsController {
             respond illustrations.errors, view:'edit'
             return
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 4fb585b (Annonce : -lister les annonces)
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.updated.message', args: [message(code: 'illustrations.label', default: 'Illustrations'), illustrations.id])
                 redirect illustrations
             }
-<<<<<<< HEAD
             '*'{ respond illustrations, [status: OK] }
-=======
             '*'{
                 respond illustrations, [status: OK],model: [annonces:annonces] }
->>>>>>> 4fb585b (Annonce : -lister les annonces)
+
         }
     }
 
