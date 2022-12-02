@@ -25,7 +25,7 @@
             </g:eachError>
         </ul>
     </g:hasErrors>
-    <g:form resource="${this.annonces}" method="POST">
+    <g:form resource="${this.annonces}" method="POST" enctype="multipart/form-data">
         <form class="form">
             <div class="row">
                 <div class="col">
@@ -65,8 +65,9 @@
                     <label style="font-size: large;">Illustration</label>
                 </div>
                 <div class="col">
-                    <input type="file"  class="form-control" name="illustrations" />
-                </div>
+                    <g:uploadForm name="illustration">
+                        <input type="file" name="illustrations" controller="illustrations" action="upload" />
+                    </g:uploadForm>
 
             </div>
             <input type="checkbox"   class="form-control" name="active" value="${true}"/>

@@ -9,7 +9,13 @@ class IllustrationsController {
     IllustrationsService illustrationsService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
-
+    def upload() {
+        def illustration = new Illustrations(params)
+        if(!illustration.save()) {
+            println "Error Saving! ${illustration.errors.allErrors}"
+        }
+        redirect view: "index"
+    }
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond illustrationsService.list(params), model:[illustrationsCount: illustrationsService.count()]
