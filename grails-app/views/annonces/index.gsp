@@ -14,33 +14,23 @@
             </ul>
         </div>
         <div id="list-annonces" class="content scaffold-list" role="main">
-            <h1><g:message code="default.list.label" args="[entityName]" /></h1>
+            <h1 style="text-align: center;color: #545b62;margin-bottom: 5%"><g:message code="default.list.label" args="[entityName]" /></h1>
             <g:if test="${flash.message}">
                 <div class="message" role="status">${flash.message}</div>
             </g:if>
-<<<<<<< HEAD
-            <f:table collection="${annoncesList}" />
-
-            <div class="pagination">
-                <g:paginate total="${annoncesCount ?: 0}" />
-            </div>
         </div>
-=======
 
-
-        </div>
-    <div class="container">
-        <div class="row">
-            <div class="table-responsive" id="proTeamScroll"  >
-                <table class="table ">
-                    <thead class="headtb">
+        <div class="contact__wrapper shadow-lg  ">
+            <div class=" contact-form__wrapper p-5 order-lg-1">
+                <table >
+                    <thead style="border-color: #6c757d;border-style:solid;background-color: #545b62;color: white ">
                     <tr >
-                        <th style="font-size:large">Annonce</th>
-                        <th style="font-size:large">Price</th>
-                        <th style="font-size:large">Active</th>
-                        <th style="font-size:large">Description</th>
-                        <th style="font-size:large">Illustrations</th>
-                        <th style="font-size:large">Author</th>
+                        <td style="font-size:large">Annonce</td>
+                        <td style="font-size:large">Price</td>
+                        <td style="font-size:large">Active</td>
+                        <td style="font-size:large">Description</td>
+                        <td style="font-size:large">Illustrations</td>
+                        <td style="font-size:large">Author</td>
                     </tr>
                     </thead>
                     <tbody>
@@ -61,9 +51,10 @@
 
                     </tbody>
                 </table>
-            </div></div></div><div class="pagination">
+            </div>
+        </div>
+    <div class="pagination" style="margin-top: 60px;padding-left: 5%;background-color:#e2e3e5;color:black;text-align: center;margin-left: 40%;margin-right: 40%">
         <g:paginate total="${annoncesCount ?: 0}" />
     </div>
->>>>>>> 4fb585b (Annonce : -lister les annonces)
     </body>
 </html>
