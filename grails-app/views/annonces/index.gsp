@@ -53,7 +53,7 @@
                 </table>
             </div>
         </div>
-    <div class="pagination" style="margin-top: 60px;padding-left: 5%;background-color:#e2e3e5;color:black;text-align: center;margin-left: 40%;margin-right: 40%">
+    <div class="pagination" style="margin-top: 60px;padding-left: %;background-color:#e2e3e5;color:black;text-align: center;margin-left: 40%;margin-right: 40%">
         <g:paginate total="${annoncesCount ?: 0}" />
     </div>
     </body>
