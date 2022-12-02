@@ -46,7 +46,6 @@ class IllustrationsController {
 
     def edit(Long id) {
         def annonces = Annonces.list()
-        println annonces.titre
         respond illustrationsService.get(id), model: [annonces: annonces]
     }
 
@@ -69,7 +68,8 @@ class IllustrationsController {
                 redirect illustrations
             }
             '*'{ respond illustrations, [status: OK] }
-            '*'
+            '*'{
+                respond illustrations, [status: OK],model: [annonces:annonces] }
 
         }
     }
