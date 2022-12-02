@@ -131,9 +131,5 @@ server:
     port: 8081
 
 illustrations:
-<<<<<<< HEAD
-    basePath: E:/MBDS/tp2/grails-app/assets/images/
-=======
     basePath: E:\leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master\grails-app\assets\images
->>>>>>> 4fb585b (Annonce : -lister les annonces)
     baseUrl: http://localhost:8081/assets/

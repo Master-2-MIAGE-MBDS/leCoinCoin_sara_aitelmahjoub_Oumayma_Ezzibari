@@ -26,17 +26,12 @@
             </ul>
             </g:hasErrors>
             <g:form resource="${this.illustrations}" method="POST">
-                <fieldset class="form">
-                    <f:all bean="illustrations"/>
-                </fieldset>
-<<<<<<< HEAD
+
                 <fieldset class="buttons">
                     <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
                 </fieldset>
             </g:form>
         </div>
-=======
-
             </g:form>
         </div><p>${this.illustrations}</p>
 
@@ -82,6 +77,5 @@
 
         </div>
     </div>
->>>>>>> 4fb585b (Annonce : -lister les annonces)
     </body>
 </html>
