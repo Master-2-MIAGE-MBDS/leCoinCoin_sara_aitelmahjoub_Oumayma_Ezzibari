@@ -14,23 +14,23 @@
             </ul>
         </div>
         <div id="list-annonces" class="content scaffold-list" role="main">
-            <h1 style="text-align: center;color: #545b62;margin-bottom: 5%"><g:message code="default.list.label" args="[entityName]" /></h1>
+            <h1><g:message code="default.list.label" args="[entityName]" /></h1>
             <g:if test="${flash.message}">
                 <div class="message" role="status">${flash.message}</div>
             </g:if>
         </div>
-
-        <div class="contact__wrapper shadow-lg  ">
-            <div class=" contact-form__wrapper p-5 order-lg-1">
-                <table >
-                    <thead style="border-color: #6c757d;border-style:solid;background-color: #545b62;color: white ">
+    
+    <div class="container">
+            <div class="table-responsive" id="proTeamScroll"  >
+                <table class="table ">
+                    <thead class="headtb">
                     <tr >
-                        <td style="font-size:large">Annonce</td>
-                        <td style="font-size:large">Price</td>
-                        <td style="font-size:large">Active</td>
-                        <td style="font-size:large">Description</td>
-                        <td style="font-size:large">Illustrations</td>
-                        <td style="font-size:large">Author</td>
+                        <th style="font-size:large">Annonce</th>
+                        <th style="font-size:large">Price</th>
+                        <th style="font-size:large">Active</th>
+                        <th style="font-size:large">Description</th>
+                        <th style="font-size:large">Illustrations</th>
+                        <th style="font-size:large">Author</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -51,9 +51,7 @@
 
                     </tbody>
                 </table>
-            </div>
-        </div>
-    <div class="pagination" style="margin-top: 60px;padding-left: 5%;background-color:#e2e3e5;color:black;text-align: center;margin-left: 40%;margin-right: 40%">
+            </div></div> <div class="pagination">
         <g:paginate total="${annoncesCount ?: 0}" />
     </div>
     </body>

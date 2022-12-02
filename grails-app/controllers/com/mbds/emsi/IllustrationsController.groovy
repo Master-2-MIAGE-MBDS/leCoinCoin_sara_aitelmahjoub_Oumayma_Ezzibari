@@ -1,8 +1,9 @@
 package com.mbds.emsi
 
+import grails.plugin.springsecurity.annotation.Secured
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
-
+@Secured(['ROLE_ADMIN','ROLE_CLIENT'])
 class IllustrationsController {
 
     IllustrationsService illustrationsService
@@ -46,7 +47,6 @@ class IllustrationsController {
 
     def edit(Long id) {
         def annonces = Annonces.list()
-        println annonces.titre
         respond illustrationsService.get(id), model: [annonces: annonces]
     }
 
@@ -69,7 +69,8 @@ class IllustrationsController {
                 redirect illustrations
             }
             '*'{ respond illustrations, [status: OK] }
-            '*'
+            '*'{
+                respond illustrations, [status: OK],model: [annonces:annonces] }
 
         }
     }

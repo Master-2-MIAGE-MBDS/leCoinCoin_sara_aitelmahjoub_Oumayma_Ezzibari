@@ -18,19 +18,14 @@
             <g:if test="${flash.message}">
                 <div class="message" role="status">${flash.message}</div>
             </g:if>
-            <f:table collection="${userList}" />
 
-            <div class="pagination">
-                <g:paginate total="${userCount ?: 0}" />
-            </div>
+
+
         </div>
     <div class="col-lg-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Striped Table</h4>
-                <p class="card-description">
-                    Add class <code>.table-striped</code>
-                </p>
+
                 <div class="table-responsive">
                     <table class="table table-striped">
                         <thead>

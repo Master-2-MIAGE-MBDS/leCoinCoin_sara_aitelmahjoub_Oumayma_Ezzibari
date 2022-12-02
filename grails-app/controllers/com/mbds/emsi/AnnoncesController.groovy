@@ -20,7 +20,13 @@ class AnnoncesController {
     }
 
     def create() {
+<<<<<<< HEAD
         respond new Annonces(params)
+=======
+        def usernamelist=User.list()
+        println usernamelist
+        respond new Annonces(params),model:[usernames:usernamelist]
+>>>>>>> 027f0b2 (fix: login-main-user)
     }
 
     def save(Annonces annonces) {

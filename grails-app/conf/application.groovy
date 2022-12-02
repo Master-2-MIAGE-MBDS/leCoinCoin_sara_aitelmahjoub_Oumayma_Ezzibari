@@ -9,10 +9,7 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.mbds.emsi.
 grails.plugin.springsecurity.authority.className = 'com.mbds.emsi.Role'
 grails.plugin.springsecurity.logout.postOnly=false
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-
 	[pattern: '/',               access: ['permitAll']],
-
-	[pattern: '/**',               access: ['permitAll']],
 	[pattern: '/error',          access: ['permitAll']],
 	[pattern: '/index',          access: ['permitAll']],
 

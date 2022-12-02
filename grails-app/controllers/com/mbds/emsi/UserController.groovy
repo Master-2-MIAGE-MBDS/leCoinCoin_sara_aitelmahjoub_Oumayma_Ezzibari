@@ -3,19 +3,19 @@ package com.mbds.emsi
 import grails.plugin.springsecurity.annotation.Secured
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
-@Secured(['ROLE_ADMIN'])
+@Secured(['ROLE_ADMIN','ROLE_CLIENT'])
 class UserController {
 
     UserService userService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
-
+    @Secured(['ROLE_ADMIN'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         def users =User.findAll();
         respond userService.list(params), model:[userCount: userService.count(),users:users]
     }
-
+    @Secured(['ROLE_ADMIN','ROLE_CLIENT'])
     def show(Long id) {
         respond userService.get(id)
     }

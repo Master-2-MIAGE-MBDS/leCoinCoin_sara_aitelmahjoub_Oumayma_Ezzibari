@@ -46,6 +46,14 @@
                     <g:select name="role" from="${roles}" id="roles" optionKey="id" style="background: #EFF2F6;color:black;" class="form-control" optionValue="authority"/>
                 </div>
             </div>
+                <div class="row">
+                    <div class="col">
+                        <label style="font-size: large;">Enabled</label>
+                    </div>
+                    <div class="col">
+                        <input type="checkbox"   class="form-control" name="enabled" value="${true}"/>
+                    </div>
+                </div>
 
 
              <div class="row" >
