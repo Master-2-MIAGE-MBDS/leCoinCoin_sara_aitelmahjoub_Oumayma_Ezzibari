@@ -22,14 +22,12 @@ class AnnoncesController {
     }
 
     def create() {
-<<<<<<< HEAD
-        respond new Annonces(params)
-=======
+ 
+
         def usernamelist=User.list()
         println usernamelist
         respond new Annonces(params),model:[usernames:usernamelist]
->>>>>>> 027f0b2 (fix: login-main-user)
-    }
+   }
 
     def save(Annonces annonces) {
         if (annonces == null) {
@@ -68,8 +66,7 @@ class AnnoncesController {
         } catch (ValidationException e) {
             respond annonces.errors, view:'edit'
             return
-        }
-
+        })
         request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.updated.message', args: [message(code: 'annonces.label', default: 'Annonces'), annonces.id])
