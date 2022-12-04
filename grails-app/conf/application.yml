@@ -131,5 +131,5 @@ server:
     port: 8081
 
 illustrations:
-    basePath: E:\leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master\grails-app\assets\images
+    basePath: C:\Users\oumaima\Downloads\leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master\leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master\grails-app\assets\images\
     baseUrl: http://localhost:8081/assets/

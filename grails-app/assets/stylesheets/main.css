@@ -98,7 +98,7 @@ img {
 }
 
 .spinner {
-    background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
+    background: url(../../../../../leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/grails-app/assets/images/spinner.gif) 50% 50% no-repeat transparent;
     height: 16px;
     width: 16px;
     padding: 0.5em;
@@ -129,7 +129,7 @@ img {
 }
 
 .nav a {
-    color: #666666;
+    color: #ffffff;
     display: block;
     padding: 0.25em 0.7em;
     text-decoration: none;
@@ -139,11 +139,11 @@ img {
 }
 
 .nav a:active, .nav a:visited {
-    color: #666666;
+    color: #ffffff;
 }
 
 .nav a:focus, .nav a:hover {
-    background-color: #999999;
+
     color: #ffffff;
     outline: none;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
@@ -151,7 +151,7 @@ img {
 
 .no-borderradius .nav a:focus, .no-borderradius .nav a:hover {
     background-color: transparent;
-    color: #444444;
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -162,16 +162,321 @@ img {
 }
 
 .nav a.home {
-    background-image: url(../images/skin/house.png);
+    background-image: url(../../../../../leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/grails-app/assets/images/skin/house.png);
 }
 
-.nav a.list {
-    background-image: url(../images/skin/database_table.png);
+
+/*content*/
+.prod-info-main {
+
+
+
+    background: transparent;
+    width: 250px;
+    height: 100px;
+    padding: 6px;
+
+
 }
 
-.nav a.create {
-    background-image: url(../images/skin/database_add.png);
+
+.prod-info-main .product-image {
+
+    background-color: #1e1d1d;
+
+    display: block;
+    width: 180px;
+    min-height: 50px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    border: 1px solid #CEEFFF;
+
+
+
 }
+
+
+
+.prod-info-main .product-deatil {
+
+    border-bottom: 1px solid #dfe5e9;
+
+    padding-bottom: 17px;
+
+    padding-left: 16px;
+
+    padding-top: 16px;
+
+    position: relative;
+
+    background: #fff
+
+}
+
+
+
+.product-content .product-deatil h5 a {
+
+    color: #2f383d;
+
+    font-size: 15px;
+
+    line-height: 19px;
+
+    text-decoration: none;
+
+    padding-left: 0;
+
+    margin-left: 0
+
+}
+
+
+
+.prod-info-main .product-deatil h5 a span {
+
+    color: #9aa7af;
+
+    display: block;
+
+    font-size: 13px
+
+}
+
+
+
+.prod-info-main .product-deatil span.tag1 {
+
+    border-radius: 50%;
+
+    color: #fff;
+
+    font-size: 15px;
+
+    height: 50px;
+
+    padding: 13px 0;
+
+    position: absolute;
+
+    right: 10px;
+
+    text-align: center;
+
+    top: 10px;
+
+    width: 50px
+
+}
+
+
+
+.prod-info-main .product-deatil span.sale {
+
+    background-color: #21c2f8
+
+}
+
+
+
+.prod-info-main .product-deatil span.discount {
+
+    background-color: #71e134
+
+}
+
+
+
+.prod-info-main .product-deatil span.hot {
+
+    background-color: #fa9442
+
+}
+
+
+
+.prod-info-main .description {
+
+    font-size: 12.5px;
+
+    line-height: 20px;
+
+    padding: 10px 14px 16px 19px;
+
+    background: #fff
+
+}
+
+
+
+.prod-info-main .product-info {
+
+    padding: 11px 19px 10px 20px
+
+}
+
+
+
+.prod-info-main .product-info a.add-to-cart {
+
+    color: #2f383d;
+
+    font-size: 13px;
+
+    padding-left: 16px
+
+}
+
+
+
+
+.prod-info-main name.a {
+
+    padding: 5px 10px;
+
+    margin-left: 16px
+
+}
+
+
+
+.product-info.smart-form .btn {
+
+    padding: 6px 12px;
+
+    margin-left: 12px;
+
+    margin-top: -10px
+
+}
+
+
+
+.load-more-btn {
+
+    background-color: #21c2f8;
+
+    border-bottom: 2px solid #037ca5;
+
+    border-radius: 2px;
+
+    border-top: 2px solid #0cf;
+
+    margin-top: 20px;
+
+    padding: 9px 0;
+
+    width: 100%
+
+}
+.illus{
+    width: 215px;
+    height: 235px;
+
+}
+.illusAdmin{
+    width: 100px;
+    height: 100px;
+    white-space: nowrap;
+
+}
+
+
+.product-block .product-deatil p.price-container span,
+
+.prod-info-main .product-deatil p.price-container span,
+
+.shipping table tbody tr td p.price-container span,
+
+.shopping-items table tbody tr td p.price-container span {
+
+    color: #21c2f8;
+
+    font-family: Lato, sans-serif;
+
+    font-size: 24px;
+
+    line-height: 20px
+
+}
+
+
+
+.product-info.smart-form .rating label {
+
+    margin-top:15px;
+
+
+
+}
+
+
+
+.prod-wrap .product-image span.tag2 {
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 10px;
+
+    width: 36px;
+
+    height: 36px;
+
+    border-radius: 50%;
+
+    padding: 10px 0;
+
+    color: #fff;
+
+    font-size: 11px;
+
+    text-align: center
+
+}
+
+
+
+.prod-wrap .product-image span.tag3 {
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 20px;
+
+    width: 60px;
+
+    height: 36px;
+
+    border-radius: 50%;
+
+    padding: 10px 0;
+
+    color: #fff;
+
+    font-size: 11px;
+
+    text-align: center
+
+}
+
+
+
+.prod-wrap .product-image span.sale {
+
+    background-color: #57889c;
+
+}
+
+
+
+
+
 
 .nav li.dropdown.open ul.dropdown-menu {
     background-color: #424649;
@@ -187,7 +492,11 @@ fieldset,
     zoom: 1;
     border: none;
 }
+.illus{
+    width: 150px;
+    height: 100px;
 
+}
 .property-list .fieldcontain {
     list-style: none;
     overflow: hidden;
@@ -329,12 +638,12 @@ fieldset.embedded legend {
 
 .errors li {
     list-style: none;
-    background: transparent url(../images/skin/exclamation.png) 0.5em 50% no-repeat;
+    background: transparent url(../../../../../leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/grails-app/assets/images/skin/exclamation.png) 0.5em 50% no-repeat;
     text-indent: 2.2em;
 }
 
 .message {
-    background: transparent url(../images/skin/information.png) 0.5em 50% no-repeat;
+    background: transparent url(../../../../../leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/grails-app/assets/images/skin/information.png) 0.5em 50% no-repeat;
     text-indent: 2.2em;
 }
 
@@ -430,11 +739,11 @@ th.sortable a {
 }
 
 th.asc a {
-    background-image: url(../images/skin/sorted_asc.gif);
+    background-image: url(../../../../../leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/grails-app/assets/images/skin/sorted_asc.gif);
 }
 
 th.desc a {
-    background-image: url(../images/skin/sorted_desc.gif);
+    background-image: url(../../../../../leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/grails-app/assets/images/skin/sorted_desc.gif);
 }
 
 .odd {
@@ -544,15 +853,15 @@ th:hover, tr:hover {
 }
 
 .buttons .delete {
-    background-image: url(../images/skin/database_delete.png);
+    background-image: url(../../../../../leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/grails-app/assets/images/skin/database_delete.png);
 }
 
 .buttons .edit {
-    background-image: url(../images/skin/database_edit.png);
+    background-image: url(../../../../../leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/grails-app/assets/images/skin/database_edit.png);
 }
 
 .buttons .save {
-    background-image: url(../images/skin/database_save.png);
+    background-image: url(../../../../../leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master/grails-app/assets/images/skin/database_save.png);
 }
 
 a.skip {

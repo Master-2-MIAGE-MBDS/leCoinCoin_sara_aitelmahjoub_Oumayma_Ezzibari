@@ -44,16 +44,16 @@
                     <i class='bx bx-grid-alt nav_icon'>
                     </i>
                     <span class="nav_name">Dashboard</span> </a>
-                <sec:ifAnyGranted roles="ROLE_ADMIN, ROLE_CLIENT">
+                <sec:ifAnyGranted roles="ROLE_ADMIN, ROLE_USER">
                     <a class="nav_link"
                         <g:link controller="annonces" action="index">Consulter les annonces</g:link></a>
 
                 </sec:ifAnyGranted>
-<sec:ifAnyGranted roles="ROLE_ADMIN, ROLE_CLIENT">
-    <a class="nav_link"
-       <g:link controller="illustrations" action="index">Consulter les illustrations</g:link></a>
+        <sec:ifAnyGranted roles="ROLE_ADMIN, ROLE_USER">
+            <a class="nav_link"
+               <g:link controller="illustrations" action="index">Consulter les illustrations</g:link></a>
 
-</sec:ifAnyGranted>
+        </sec:ifAnyGranted>
                 <sec:ifAnyGranted roles="ROLE_ADMIN">
                     <a class="nav_link"
                        <g:link controller="user" action="index">Consulter les Users</g:link></a>

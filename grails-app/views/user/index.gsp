@@ -51,6 +51,9 @@
                             <th>
                             Enabled
                         </th>
+                            <th>
+                                Action
+                            </th>
                         </tr>
                         </thead>
                         <tbody>
@@ -73,6 +76,14 @@
                                  </td>
                                 <td>
                                     <p>${user.accountLocked}</p>
+                                </td>
+                                <td>
+                                    <p>${user.enabled}</p>
+                                </td>
+                                <td>
+                                   <a href="${createLink(controller: 'user', action: 'edit',id:user.id)}"><asset:image src="edit.png" style="width: 20px;height: 20px"/></a>
+                                    <a href="${createLink(controller: 'user', action: 'delete',id:user.id)}"><asset:image src="delete.png" style="width: 20px;height: 20px"/></a>
+
                                 </td>
                             </tr>
                         </g:each>

@@ -465,7 +465,7 @@
         width: 100%;
         height: 50px;
         border-radius: 10px;
-        background: #6675df;
+        background: rgba(87, 43, 11, 0.99);
 
         font-family: Montserrat-Bold;
         font-size: 12px;
@@ -688,7 +688,7 @@
 <body >
 <div class="limiter">
     <div class="container-login100 ">
-        <div class="wrap-login100" style=" background: #E1E7EF;">
+        <div class="wrap-login100" style="background-color: #572b0b;">
 
             <g:if test='${flash.message}'>
                 <div class="login_message">${flash.message}</div>
@@ -731,8 +731,8 @@
                     <input class="login100-form-btn" type="submit" id="submit" value="${message(code: 'springSecurity.login.button')}"/>
                 </div>
             </form>
-            <div class="login100-more" >
-                <asset:image src="LeCoinCoin-1.png" style="max-width: 600px; max-height: 600px"/>
+            <div class="login100-more" style="justify-content: center;text-align: center">
+                <asset:image src="logo.png" style="width: 600px;height: 600px;"/>
             </div>
 
 

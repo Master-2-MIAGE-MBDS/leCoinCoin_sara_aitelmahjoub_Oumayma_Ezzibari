@@ -25,8 +25,9 @@
             </g:eachError>
         </ul>
     </g:hasErrors>
-    <g:form resource="${this.annonces}" method="POST" enctype="multipart/form-data">
-        <form class="form">
+    <g:form resource="${this.annonces}"  enctype="multipart/form-data" method="POST">
+        <g:uploadForm controller="api" action="annonces" method="POST" enctype="multipart/form-data">
+
             <div class="row">
                 <div class="col">
                     <label style="font-size: large;">Titre</label>
@@ -65,19 +66,16 @@
                     <label style="font-size: large;">Illustration</label>
                 </div>
                 <div class="col">
-                    <g:uploadForm name="illustration">
-                        <input type="file" name="illustrations" controller="illustrations" action="upload" />
-                    </g:uploadForm>
-
-            </div>
+           <td><input type="file" id="illustrations" name="illustrations"  multiple accept="image/*"></td>
+                </div>
             <input type="checkbox"   class="form-control" name="active" value="${true}"/>
             <div class="row" >
                 <div class="col">
-                    <g:submitButton name="create" class="save"  value="${message(code: 'default.button.create.label', default: 'Create')}" />
+                    <input type="submit" value="submit" />
                 </div>
             </div>
 
-        </form>
+        </g:uploadForm>
 
     </g:form>
 </div>

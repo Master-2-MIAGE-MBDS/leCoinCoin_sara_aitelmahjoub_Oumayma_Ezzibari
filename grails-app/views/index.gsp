@@ -1,77 +1,139 @@
-<!doctype html>
+<%--
+  Created by IntelliJ IDEA.
+  User: oumaima
+  Date: 02/12/2022
+  Time: 16:55
+--%>
+
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>Home Page</title>
+    <style  type="text/css" media="screen">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: 'Lato', sans-serif;
+    }
+    .wrapper{
+        width: 1170px;
+        margin: auto;
+    }
+    header{
+        background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://i.postimg.cc/j584FvRh/1.jpg);
+        height: 100vh;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+    }
+    .nav-area{
+        float: right;
+        list-style: none;
+        margin-top: 30px;
+    }
+    .nav-area li{
+        display: inline-block;
+    }
+    .nav-area li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 20px;
+        font-family: poppins;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .nav-area li a:hover{
+        background: #fff;
+        color: #333;
+    }
+    .logo{
+        float: left;
+    }
+    .logo .img{
+
+    }
+    .welcome-text{
+        position: absolute;
+        width: 600px;
+        height: 300px;
+        margin: 20% 30%;
+        text-align: center;
+    }
+    .welcome-text h1{
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 60px;
+    }
+    .welcome-text a{
+        border: 1px solid #fff;
+        padding: 10px 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-top: 20px;
+        display: inline-block;
+        color: #fff;
+    }
+    .welcome-text a:hover{
+        background: #fff;
+        color: #333;
+    }
+
+    /*resposive*/
+
+    @media (max-width:600px){
+        .wrapper {
+            width: 100%;
+        }
+        .logo {
+            float: none;
+            width: 50%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .nav-area {
+            float: none;
+            margin-top: 0;
+        }
+        .nav-area li a {
+            padding: 5px;
+            font-size: 11px;
+        }
+        .nav-area {
+            text-align: center;
+        }
+        .welcome-text {
+            width: 100%;
+            height: auto;
+            margin: 30% 0;
+        }
+        .welcome-text h1 {
+            font-size: 30px;
+        }
+    }
+
+    </style>
 </head>
+
 <body>
-    <content tag="nav">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Environment: ${grails.util.Environment.current.name}</a></li>
-                <li><a href="#">App profile: ${grailsApplication.config.grails?.profile}</a></li>
-                <li><a href="#">App version:
-                    <g:meta name="info.app.version"/></a>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Grails version:
-                    <g:meta name="info.app.grailsVersion"/></a>
-                </li>
-                <li><a href="#">Groovy version: ${GroovySystem.getVersion()}</a></li>
-                <li><a href="#">JVM version: ${System.getProperty('java.version')}</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
-                <li><a href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
-                <li><a href="#">Services: ${grailsApplication.serviceClasses.size()}</a></li>
-                <li><a href="#">Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-                    <li><a href="#">${plugin.name} - ${plugin.version}</a></li>
-                </g:each>
-            </ul>
-        </li>
-    </content>
-
-    <div class="svg" role="presentation">
-        <div class="grails-logo-container">
-            <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            <asset:image class="img" src="logo.png" alt="" style="width: 200px;height: 200px; padding: -10px 15px;padding-top: -10px"/>
         </div>
+
     </div>
-
-    <div id="content" role="main">
-        <section class="row colset-2-its">
-            <h1>Welcome to Grails</h1>
-
-            <p>
-                Congratulations, you have successfully started your first Grails application! At the moment
-                this is the default page, feel free to modify it to either redirect to a controller or display
-                whatever content you may choose. Below is a list of controllers that are currently deployed in
-                this application, click on each to execute its default action:
-            </p>
-
-            <div id="controllers" role="navigation">
-                <h2>Available Controllers:</h2>
-                <ul>
-                    <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                        <li class="controller">
-                            <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                        </li>
-                    </g:each>
-                </ul>
-            </div>
-        </section>
+    <div class="welcome-text">
+        <h1>
+            Welcome to le COINCOIN</h1>
+        <a href="/login/auth">Sign In</a>
     </div>
+</header>
 
 </body>
 </html>
