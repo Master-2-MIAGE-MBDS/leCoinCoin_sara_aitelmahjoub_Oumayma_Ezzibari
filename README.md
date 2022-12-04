@@ -69,3 +69,7 @@ modèle de donnée permettra de gérer des annonces et leurs illustrations
 ### Supprimer une illustration :
 
     L'Administrateur peut supprimer une illustration ou plusieur :
+
+
+https://user-images.githubusercontent.com/116803969/205507826-2b8a6dcb-dc18-4193-867b-0f41d60e9b77.mp4
+
