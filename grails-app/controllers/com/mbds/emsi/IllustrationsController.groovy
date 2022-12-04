@@ -3,24 +3,30 @@ package com.mbds.emsi
 import grails.plugin.springsecurity.annotation.Secured
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
-@Secured(['ROLE_ADMIN','ROLE_CLIENT'])
+@Secured(['ROLE_ADMIN','ROLE_USER'])
 class IllustrationsController {
 
     IllustrationsService illustrationsService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+
     def upload() {
-        def illustration = new Illustrations(params)
-        if(!illustration.save()) {
-            println "Error Saving! ${illustration.errors.allErrors}"
+        def f = request.getFile('filename')
+        if (f.empty) {
+            flash.message = 'file cannot be empty'
+            render(view: 'uploadForm')
+            return
         }
-        redirect view: "index"
+
+        f.transferTo(new File('C:\\Users\\oumaima\\Downloads\\leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master\\leCoinCoin_sara_aitelmahjoub_Oumayma_Ezzibari-master\\grails-app\\assets\\images\\filename.txt'))
+        response.sendError(200, 'Done')
     }
+    @Secured(['ROLE_ADMIN','ROLE_USER'])
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond illustrationsService.list(params), model:[illustrationsCount: illustrationsService.count()]
     }
-
+    @Secured(['ROLE_ADMIN','ROLE_USER'])
     def show(Long id) {
         respond illustrationsService.get(id)
     }
@@ -28,7 +34,7 @@ class IllustrationsController {
     def create() {
         respond new Illustrations(params)
     }
-
+    @Secured(['ROLE_ADMIN','ROLE_USER'])
     def save(Illustrations illustrations) {
         if (illustrations == null) {
             notFound()
@@ -50,12 +56,12 @@ class IllustrationsController {
             '*' { respond illustrations, [status: CREATED] }
         }
     }
-
+    @Secured(['ROLE_ADMIN','ROLE_USER'])
     def edit(Long id) {
         def annonces = Annonces.list()
         respond illustrationsService.get(id), model: [annonces: annonces]
     }
-
+    @Secured(['ROLE_ADMIN','ROLE_USER'])
     def update(Illustrations illustrations) {
         def annonces=Annonces.list()
         if (illustrations == null) {
@@ -80,7 +86,7 @@ class IllustrationsController {
 
         }
     }
-
+    @Secured(['ROLE_ADMIN'])
     def delete(Long id) {
         if (id == null) {
             notFound()

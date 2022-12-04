@@ -3,7 +3,7 @@ package com.mbds.emsi
 import grails.plugin.springsecurity.annotation.Secured
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
-@Secured(['ROLE_ADMIN','ROLE_CLIENT'])
+@Secured(['ROLE_ADMIN','ROLE_USER'])
 class UserController {
 
     UserService userService
@@ -15,7 +15,7 @@ class UserController {
         def users =User.findAll();
         respond userService.list(params), model:[userCount: userService.count(),users:users]
     }
-    @Secured(['ROLE_ADMIN','ROLE_CLIENT'])
+    @Secured(['ROLE_ADMIN','ROLE_USER'])
     def show(Long id) {
         respond userService.get(id)
     }
@@ -34,7 +34,9 @@ class UserController {
         }
 
         try {
+            def role =Role.get(params.role)
             userService.save(user)
+            UserRole.create(user,role,true)
         } catch (ValidationException e) {
             respond user.errors, view:'create'
             return
