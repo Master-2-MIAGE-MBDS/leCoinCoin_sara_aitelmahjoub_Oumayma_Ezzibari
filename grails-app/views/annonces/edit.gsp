@@ -73,7 +73,7 @@
                                             Illustrations <b style="color: red">*</b>:
                                         </td>
                                         <td style="text-align: center">  <g:each in="${annonces.illustration}" var="elemimg">
-                                                <a href="/illustrations/show/${elemimg.id}"> <img  src="${resource(dir: 'images', file: elemimg.filename)}" alt="Grails"/></a>
+                                                <a href="/illustrations/show/${elemimg.id}"> <img  src="${resource(dir: 'images', file: elemimg.filename)}" style="width:200px;height: 200px" alt="Grails"/></a>
                                             </g:each>
                                         </td>
                                     </tr>
