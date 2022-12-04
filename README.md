@@ -17,7 +17,6 @@ Lecoincoin est une entreprise de dépôt vente touchant à tout ce qui peut se v
 
     ○ MODERATOR
     
-    ○ CLIENT
 
 ● L’administrateur et le modérateur pourront tous deux accéder au backend
  
@@ -33,8 +32,13 @@ modèle de donnée permettra de gérer des annonces et leurs illustrations
     ○ Les illustrations 
 
 
-## Partie Administrateur
-    L'utilisateur avec le role Administrateur a touts les droit d'accée , il peut :
+##  Administrateur
+    L'utilisateur avec le role Administrateur a touts les droit d'accée , il peut : supprimer , ajouter , lister , modifier les annonces et les illustrations .
+    
+##  MODERATOR
+    L'utilisateur avec le role MODERATOR a les droit de gerer les annonces qu'il a crée  supprimer , ajouter , lister , modifier.
+  
+# --------------------------------------------------------
 
 ## ANNONCES :
 ### Liste des Annonces :
@@ -43,15 +47,15 @@ modèle de donnée permettra de gérer des annonces et leurs illustrations
 
 ### Crée une nouvelle Annonce :
 
-    Cette page permet a l'Administrateur de cree une nouvelle annonce avec c'est propre information et d'ajouter des illustrations
+    dans cette page permet à MODERATOR ou Administrateur de cree une nouvelle annonce avec c'est propre information et d'ajouter des illustrations
 
 ### Editée une Annonce :
 
-    l'Administrateur a le droit de modifier les informations des annonces .
+    Dans cette page soit l'MODERATOR qui a cree cette annonce ou l'Admin à le droit de modifier les informations .
 
 ### Supprimer une Annonce :
 
-    L'Administrateur peut supprimer une annonce ou plusieur :
+    MODERATOR qui a cree l'annonce ou  L'Administrateur peut supprimer une annonce ou plusieur .
 
 ## ILLUSTRATIONS :
 ## List des illustrations :
@@ -60,15 +64,15 @@ modèle de donnée permettra de gérer des annonces et leurs illustrations
 
 ### Crée une nouvelle illustration :
 
-    Cette page permet a l'Administrateur de cree une nouvelle illustration avec c'est propre information.
+    Cette page on cree des nouvelles illustrations avec c'est propre information.
 
 ### Editée une illustration :
 
-    L'Administrateur a le droit de modifier les informations des illustrations .
+  cette page permet à l'utilisateur connecté de modifier les informations des illustrations .
 
 ### Supprimer une illustration :
 
-    L'Administrateur peut supprimer une illustration ou plusieur :
+    cette page permet à l'utilisateur connecté de supprimer une illustration ou plusieur :
 
 
 https://user-images.githubusercontent.com/116803969/205507826-2b8a6dcb-dc18-4193-867b-0f41d60e9b77.mp4
