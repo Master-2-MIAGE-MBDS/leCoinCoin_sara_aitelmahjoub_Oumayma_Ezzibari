@@ -34,8 +34,8 @@ modèle de donnée permettra de gérer des annonces et leurs illustrations
 
 ##  Administrateur
     L'utilisateur avec le role Administrateur a touts les droit d'accée , il peut : supprimer , ajouter , lister , modifier les annonces et les illustrations .
-    
-    ![Capture d’écran 2022-12-04 195341](https://user-images.githubusercontent.com/116803969/205509752-72817d01-4e19-40bf-90d4-6fa455b4dcef.png)
+![Capture d’écran 2022-12-04 195341](https://user-images.githubusercontent.com/116803969/205509996-369537fa-6958-4d14-854a-a4425c8eb905.png)
+
 
 ##  MODERATOR
     L'utilisateur avec le role MODERATOR a les droit de gerer les annonces qu'il a crée  supprimer , ajouter , lister , modifier.
@@ -58,12 +58,14 @@ modèle de donnée permettra de gérer des annonces et leurs illustrations
 ### Editée une Annonce :
 
     Dans cette page soit l'MODERATOR qui a cree cette annonce ou l'Admin à le droit de modifier les informations .
-    ![Capture d’écran 2022-12-04 194913](https://user-images.githubusercontent.com/116803969/205509563-f82a287c-2b8e-43c9-92c4-7642ac680f0a.png)
+![Capture d’écran 2022-12-04 195642](https://user-images.githubusercontent.com/116803969/205509851-347e193a-046b-4cc9-8be8-beedf423ce74.png)
 
 
 ### Supprimer une Annonce :
 
-    MODERATOR qui a cree l'annonce ou  L'Administrateur peut supprimer une annonce ou plusieur .
+    MODERATOR qui a cree l'annonce ou  L'Administrateur peut supprimer une annonce ou plusieur :
+![Capture d’écran 2022-12-04 195813](https://user-images.githubusercontent.com/116803969/205509913-f565a37d-077e-4fa9-ac89-8f4956eb495f.png)
+
 
 ## ILLUSTRATIONS :
 ## List des illustrations :
@@ -74,7 +76,7 @@ modèle de donnée permettra de gérer des annonces et leurs illustrations
 ### Crée une nouvelle illustration :
 
     Cette page on cree des nouvelles illustrations avec c'est propre information.
-    ![Capture d’écran 2022-12-04 195034](https://user-images.githubusercontent.com/116803969/205509630-37602a74-1b19-41e5-80f9-03f6f7acfd74.png)
+![Capture d’écran 2022-12-04 195034](https://user-images.githubusercontent.com/116803969/205509940-fe857a5d-eb13-4d09-96ae-8fdb195bcbb4.png)
 
 
 ### Editée une illustration :
@@ -86,8 +88,8 @@ modèle de donnée permettra de gérer des annonces et leurs illustrations
 ### Supprimer une illustration :
 
     cette page permet à l'utilisateur connecté de supprimer une illustration ou plusieur :
+![Capture d’écran 2022-12-04 195245](https://user-images.githubusercontent.com/116803969/205509973-e8468c50-f482-4ac9-b061-4dd1c0474924.png)
 
-![Capture d’écran 2022-12-04 195245](https://user-images.githubusercontent.com/116803969/205509695-60551f85-3eb8-48df-a06b-edd4c3e36991.png)
 
 https://user-images.githubusercontent.com/116803969/205507826-2b8a6dcb-dc18-4193-867b-0f41d60e9b77.mp4
 
